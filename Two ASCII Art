@@ -1,0 +1,62 @@
+def print_music():
+    """
+    Purpose: Print a stylized ASCII musical notation.
+    Credit: https://www.asciiart.eu/music/musical-notation
+    """
+    print("      _____        ")
+    print("     /     \\       ")   # Notice the escaped backslash
+    print("    /  ' '  \\   ~  ")
+    print("    |  \" \"  |  ~  ")
+    print(" --(    |    )-----")
+    print("    \\       /      ")
+    print("     \\_____/       ")
+    print("       | |         ")
+    print("       ' '         ")
+
+def print_abacus():
+    """
+    Purpose: Prints a stylized ASCII abacus.
+    Credit: https://www.asciiart.eu/miscellaneous/abacuses
+    """
+    print("         ,-------------------,")
+    print("         | 'o'   \"o\"   o   o |")
+    print("         |   o   'o'   \"o\"  o|")
+    print("         \\___________________/")
+    print("          )                 (")
+    print("         /                   \\")
+    print("        '---------------------'")
+
+
+
+print_music()
+print_abacus()
+
+
+#Repetition of Two ASCII art
+def print_logo():
+    '''
+    Purpose: Prints a logo by alternating between print_music and print_abacus,
+    each repeated twice in the order: music, abacus, music, abacus.
+    Spacer lines (/~~~~~~~~\) are printed before the first figure, between figures,
+    and after the last figure.
+    '''
+    # Print spacer
+    print("/~~~~~~~~\\")
+    # Print first figure
+    print_music()
+    # Print spacer
+    print("/~~~~~~~~\\")
+    # Print second figure
+    print_abacus()
+    # Print spacer
+    print("/~~~~~~~~\\")
+    # Print first figure again
+    print_music()
+    # Print spacer
+    print("/~~~~~~~~\\")
+    # Print second figure again
+    print_abacus()
+    # Print final spacer
+    print("/~~~~~~~~\\")
+
+print_logo()
